@@ -29,7 +29,7 @@ class DevelopConfig(Config):
     DATABASE = {
         "USER": 'root',
         "PASSWORD": 'rock1204',
-        "HOST": '127.0.0.1',
+        "HOST": '39.106.174.160',
         "PORT": '3306',
         "NAME": 'FlaskDay06',
         'DB': 'mysql',
