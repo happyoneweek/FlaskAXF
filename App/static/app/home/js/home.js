@@ -14,7 +14,6 @@ function initTopSwiper(){
     })
 }
 
-
 function initMenuSwiper(){
 
     var swiper = new Swiper("#swiperMenu", {
