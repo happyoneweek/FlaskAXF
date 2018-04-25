@@ -22,91 +22,64 @@
             <div class="swiper-pagination"></div>
 
         </div>
-        <!--{#         导航         #}-->
-        <!--<div class="topMenu">-->
-            <!--<nav>-->
-                <!--<ul>-->
-                    <!--{% for nav in navs %}-->
-                        <!--<li>-->
-                            <!--<img src="{{ nav.img }}" alt="{{ nav.name }}">-->
-                            <!--<span>{{ nav.name }}</span>-->
-                        <!--</li>-->
-                    <!--{% endfor %}-->
 
-                <!--</ul>-->
-            <!--</nav>-->
-        <!--</div>-->
-        <!--{#         必购     #}-->
-        <!--<div id="swiperMenu" class="swiper-container">-->
+        <!--  导航  -->
+        <div class="topMenu">
+            <nav>
+                <ul id="topMenu">
+                </ul>
+            </nav>
+        </div>
 
-            <!--<ul class="swiper-wrapper">-->
+        <!--  必购     -->
+        <div id="swiperMenu" class="swiper-container">
 
-                <!--{% for mustbuy in mustbuys %}-->
-                    <!--<li class="swiper-slide">-->
-                        <!--<img src="{{ mustbuy.img }}" alt="{{ mustbuy.name }}">-->
-                    <!--</li>-->
-                <!--{% endfor %}-->
+            <ul class="swiper-wrapper" id="swiperMenuWrapper">
 
+            </ul>
 
-            <!--</ul>-->
+        </div>
 
-        <!--</div>-->
-        <!--{#          商店    #}-->
-        <!--<div class="CVS">-->
+        <!--    商店    -->
+        <div class="CVS" id="CVS">
 
-            <!--<h2>-->
-                <!--<img src="{{ shop0.0.img }}" alt="{{ shop0.0.name }}">-->
-            <!--</h2>-->
+            <h2>
+                <!-- 第一部分 -->
+            </h2>
 
-            <!--<fieldset>-->
-                <!--{% for shop in shop1_3 %}-->
-                    <!--<a href="#">-->
-                        <!--<img src="{{ shop.img }}" alt="{{ shop.name }}">-->
-                    <!--</a>-->
-                <!--{% endfor %}-->
+            <fieldset>
+                <!-- 第二部分 -->
+            </fieldset>
 
-            <!--</fieldset>-->
+            <ul>
+               <!-- 第三部分 -->
+            </ul>
 
-            <!--<ul>-->
-                <!--{% for shop in shop3_7 %}-->
-                    <!--<li>-->
-                        <!--<a href="#">-->
-                            <!--<img src="{{ shop.img }}" alt="{{ shop.name }}">-->
-                            <!--<span>{{ shop.name }}</span>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                <!--{% endfor %}-->
+            <ol>
+                <!-- 第四部分 -->
+            </ol>
 
-            <!--</ul>-->
-
-            <!--<ol>-->
-                <!--{% for shop in shop7_11 %}-->
-                    <!--<li>-->
-                        <!--<a href="#">-->
-                            <!--<img src="{{ shop.img }}" alt="{{ shop.name }}">-->
-                        <!--</a>-->
-                    <!--</li>-->
-                <!--{% endfor %}-->
-
-            <!--</ol>-->
-
-        <!--</div>-->
+        </div>
 
         <!--{#         主要显示 #}-->
-        <!--<div class="mainInfo">-->
+        <div class="mainInfo" id="mainInfo">
 
             <!--{% for mainshow in mainshows %}-->
                 <!--<section>-->
+                    <!-- 第一部分 -->
                     <!--<h3>{{ mainshow.name }}<span></span><a href="#">更多&gt;</a></h3>-->
 
+                    <!-- 第二部分 -->
                     <!--<div>-->
                         <!--<a href="#">-->
                             <!--<img src="{{ mainshow.img }}" alt="{{ mainshow.name }}">-->
                         <!--</a>-->
                     <!--</div>-->
 
+                    <!-- 第三部分 -->
                     <!--<ul>-->
 
+                        <!-- 列表1 -->
                         <!--<li>-->
                             <!--<a href="#">-->
                                 <!--<img src="{{ mainshow.img1 }}" alt="{{ mainshow.longname1 }}">-->
@@ -120,6 +93,8 @@
                                 <!--<span>+</span>-->
                             <!--</button>-->
                         <!--</li>-->
+
+                       <!-- 列表2 -->
                        <!--<li>-->
                             <!--<a href="#">-->
                                 <!--<img src="{{ mainshow.img2 }}" alt="{{ mainshow.longname2 }}">-->
@@ -133,6 +108,8 @@
                                 <!--<span>+</span>-->
                             <!--</button>-->
                         <!--</li>-->
+
+                       <!-- 列表3 -->
                        <!--<li>-->
                             <!--<a href="#">-->
                                 <!--<img src="{{ mainshow.img3 }}" alt="{{ mainshow.longname3 }}">-->
@@ -154,7 +131,7 @@
             <!--{% endfor %}-->
 
 
-        <!--</div>-->
+        </div>
     </div>
 
  <footer>
