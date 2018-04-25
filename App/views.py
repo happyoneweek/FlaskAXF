@@ -1,11 +1,23 @@
-from flask_restful import Resource
+from flask_restful import Resource, fields, marshal_with
+from App.models import HomeBanner
+
+banner_fileds = {
+    "img": fields.String,
+    "name": fields.String,
+    "trackid": fields.String
+}
 
 
-class Hello(Resource):
+result_fileds = {
+    "msg": fields.String,
+    "status": fields.String,
+    "banner_data": fields.List(fields.Nested(banner_fileds))
+}
 
+
+class HomeResource(Resource):
+
+    @marshal_with(result_fileds)
     def get(self):
-        return {"msg": "ok"}
-
-    def post(self):
-        return {"msg": "create success"}
-
+        homebanners = HomeBanner.query.all()
+        return {"msg": "ok", "banner_data": homebanners}
