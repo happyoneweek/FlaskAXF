@@ -18,16 +18,14 @@ function initTopSwiper(){
     })
 }
 
-<<<<<<< HEAD
 
-=======
 function initMenuSwiper(){
 
     var swiper = new Swiper("#swiperMenu", {
         slidesPerView: 3
     })
 }
->>>>>>> f5751d083049db44aa4ee8df98a5ac71ebaacc83
+
 function loadbanner(){
     $.getJSON("/home/", function(data){
         // console.log(data);
