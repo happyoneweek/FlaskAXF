@@ -6,7 +6,7 @@
 def get_db_uri(dbinfo):
     user = dbinfo.get("USER") or 'root'
     password = dbinfo.get("PASSWORD") or 'rock1204'
-    host = dbinfo.get("HOST") or "localhost"
+    host = dbinfo.get("HOST") or "zkx1801.top"
     port = dbinfo.get("PORT") or '3306'
     name = dbinfo.get("NAME") or 'mysql'
     db = dbinfo.get("DB") or 'mysql'

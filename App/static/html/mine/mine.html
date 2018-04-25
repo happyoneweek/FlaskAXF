@@ -11,7 +11,106 @@
     <link rel="stylesheet" href="/static/app/mine/mine.css">
 </head>
 <body>
-<header></header>
+<div id="mine">
+
+        <div class="fixed">
+                <img src="#" alt="icon">
+                <span class="glyphicon glyphicon-user"></span>
+                <a href="/static/html/user/user_login.html">not login</a>
+
+            <p><span class="glyphicon glyphicon-fire"></span><span>等级</span></p>
+                <div id="regis">
+                    <a href="/static/html/user/user_register.html">注册</a>
+                </div>
+
+
+            <p><span class="glyphicon glyphicon-heart"></span><span>收藏</span></p>
+
+        </div>
+
+        <div class="mine">
+
+            <p>我的订单<a href="#">更多&gt;</a></p>
+
+            <div id="nav">
+
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><span id="wait_pay_list" class="glyphicon glyphicon-usd"></span><span class="badge">
+
+                            </span></dt>
+                            <dd>待付款</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span id="order_payed_list" class="glyphicon glyphicon-envelope"></span><span class="badge">
+
+                            </span></dt>
+                            <dd>待收货</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-pencil"></span></dt>
+                            <dd>待评价</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-retweet"></span></dt>
+                            <dd>退款/售后</dd>
+                        </dl>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <menu>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-bullhorn"></span></dt>
+                            <span>积分商城</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-credit-card"></span></dt>
+                            <span>优惠券</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-import"></span></dt>
+                            <span>收货地址</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-phone-alt"></span></dt>
+                            <span>客户反馈</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-certificate"></span></dt>
+                            <span>关于我们</span>
+                        </dl>
+                    </li>
+                </ul>
+            </menu>
+                <p class="logout">
+                    <a href="#">退出</a>
+                </p>
+        </div>
+    </div>
 
 
  <footer>
@@ -74,3 +173,4 @@
 <script type="text/javascript"src="/static/app/mine/js/mine.js"></script>
 </body>
 </html>
+
