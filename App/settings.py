@@ -6,7 +6,7 @@
 def get_db_uri(dbinfo):
     user = dbinfo.get("USER") or 'root'
     password = dbinfo.get("PASSWORD") or 'rock1204'
-    host = dbinfo.get("HOST") or "localhost"
+    host = dbinfo.get("HOST") or "zkx1801.top"
     port = dbinfo.get("PORT") or '3306'
     name = dbinfo.get("NAME") or 'mysql'
     db = dbinfo.get("DB") or 'mysql'
@@ -29,7 +29,7 @@ class DevelopConfig(Config):
     DATABASE = {
         "USER": 'root',
         "PASSWORD": 'rock1204',
-        "HOST": '127.0.0.1',
+        "HOST": '39.106.174.160',
         "PORT": '3306',
         "NAME": 'FlaskDay06',
         'DB': 'mysql',

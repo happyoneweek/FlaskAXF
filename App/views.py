@@ -8,3 +8,4 @@ class Hello(Resource):
 
     def post(self):
         return {"msg": "create success"}
+
