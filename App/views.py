@@ -1,5 +1,5 @@
 from flask_restful import Resource, fields, marshal_with
-from App.models import HomeBanner
+from App.models import HomeBanner, GoodType
 
 banner_fileds = {
     "img": fields.String,
@@ -21,3 +21,10 @@ class HomeResource(Resource):
     def get(self):
         homebanners = HomeBanner.query.all()
         return {"msg": "ok", "banner_data": homebanners}
+
+
+class MarketResource(Resource):
+    def get(self):
+        goodtypes=GoodType.query.all()
+        return {'msg':'ok'}
+

@@ -7,3 +7,10 @@ class HomeBanner(db.Model):
     img=db.Column(db.String(200))
     name=db.Column(db.String(200))
     trackid=db.Column(db.String(16))
+
+class GoodType(db.Model):
+    __tablename__='axf_goodtypes'
+    id=db.Column(db.Integer,primary_key=True,autoincrement=True)
+    typename=db.Column(db.String(200))
+    childtypename=db.Column(db.String(200))
+    typesort=db.Column(db.Integer,default=1)
