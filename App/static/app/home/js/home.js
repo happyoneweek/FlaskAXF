@@ -23,7 +23,7 @@ function initMenuSwiper(){
 }
 function loadbanner(){
     $.getJSON("/home/", function(data){
-        console.log(data);
+        // console.log(data);
         var banner_data = data["banner_data"];
         var banner_container = $("#topSwiperWrapper");
         for (var i=0;i<banner_data.length;i++){

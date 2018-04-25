@@ -7,7 +7,7 @@ migrate = Migrate()
 
 def init_ext(app):
     db.init_app(app=app)
-    migrate.init_app(app=app,db=db)
+    migrate.init_app(app=app, db=db)
 
 
     
