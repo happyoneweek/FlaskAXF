@@ -57,7 +57,7 @@ function initTopMenu() {
             var menu_ul_li_img = $('<img>');
             var menu_ul_li_span = $('<span></span>');
             menu_ul_li_img.attr('src', menu_data[i]['img']);
-            menu_ul_li_span.attr(menu_data[i]['name']);
+            menu_ul_li_span.html(menu_data[i]['name']);
             menu_ul_li_img.appendTo(menu_ul_li);
             menu_ul_li_span.appendTo(menu_ul_li);
             menu_ul_li.appendTo(menu_ul);
@@ -128,7 +128,7 @@ function initCVS() {
             var ul_li_a_img = $('<img>');
             var ul_li_a_span = $('<span></span>');
             ul_li_a_img.attr('src', CVS_date3_7[j]['img']);
-            ul_li_a_span.attr(CVS_date3_7[j]['name']);
+            ul_li_a_span.html(CVS_date3_7[j]['name']);
             ul_li_a_img.appendTo(CVS_li_a);
             ul_li_a_span.appendTo(CVS_li_a);
             ul_li_a.appendTo(CVS_li);
@@ -195,13 +195,13 @@ function mainInfo() {
             li1_a_img.appendTo(li1_a);
 
             var li1_a_p = $('<p class="description"></p>');
-            li1_a_p.attr(mainInfo_data[i]['longname1']);
+            li1_a_p.html(mainInfo_data[i]['longname1']);
             li1_a_p.appendTo(li1_a);
 
             var li1_a_span = $('<span>￥</span>')
             var li1_a_s = $('<s>￥</s>');
-            li1_a_span.attr(mainInfo_data[i]['price1']);
-            li1_a_s.attr(mainInfo_data[i]['marketprice1']);
+            li1_a_span.html(mainInfo_data[i]['price1']);
+            li1_a_s.html(mainInfo_data[i]['marketprice1']);
             li1_a_span.appendTo(li1_a);
             li1_a_s.appendTo(li1_a);
 
@@ -224,13 +224,13 @@ function mainInfo() {
             li2_a_img.appendTo(li1_a);
 
             var li2_a_p = $('<p class="description"></p>');
-            li2_a_p.attr(mainInfo_data[i]['longname2']);
+            li2_a_p.html(mainInfo_data[i]['longname2']);
             li2_a_p.appendTo(li2_a);
 
             var li2_a_span = $('<span>￥</span>')
             var li2_a_s = $('<s>￥</s>');
-            li2_a_span.attr(mainInfo_data[i]['price2']);
-            li2_a_s.attr(mainInfo_data[i]['marketprice2']);
+            li2_a_span.html(mainInfo_data[i]['price2']);
+            li2_a_s.html(mainInfo_data[i]['marketprice2']);
             li2_a_span.appendTo(li2_a);
             li2_a_s.appendTo(li2_a);
 
@@ -253,13 +253,13 @@ function mainInfo() {
             li3_a_img.appendTo(li3_a);
 
             var li3_a_p = $('<p class="description"></p>');
-            li3_a_p.attr(mainInfo_data[i]['longname3']);
+            li3_a_p.html(mainInfo_data[i]['longname3']);
             li3_a_p.appendTo(li3_a);
 
             var li3_a_span = $('<span>￥</span>');
             var li3_a_s = $('<s>￥</s>');
-            li3_a_span.attr(mainInfo_data[i]['price3']);
-            li3_a_s.attr(mainInfo_data[i]['marketprice3']);
+            li3_a_span.html(mainInfo_data[i]['price3']);
+            li3_a_s.html(mainInfo_data[i]['marketprice3']);
             li3_a_span.appendTo(li3_a);
             li3_a_s.appendTo(li3_a);
 
